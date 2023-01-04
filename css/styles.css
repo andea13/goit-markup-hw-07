@@ -19,7 +19,7 @@
 }
 
 body {
-  color: var(--primary-text-color);
+  color: var(--primary-text-color); 
   background-color: var(--primary-button-color);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -301,6 +301,7 @@ margin-left: 50px;
 }
 
 /* section 1 */
+
 .section-features {
   padding-bottom: 0;
 }
@@ -369,7 +370,7 @@ margin-left: 50px;
   text-transform: uppercase;
 }
 
-.section--subtitle>.features-list--item {
+.section--subtitle> .features-list--item {
   align-self: center;
 }
 
@@ -433,6 +434,20 @@ margin-left: 50px;
 
 /* секція 3 */
 
+.section-team {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: var(--secondary-button-background-color);
+}
+
+.container-team {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-button-background-color);
+}
+
 .team-list {
   display: flex;
   align-items: center;
@@ -443,23 +458,35 @@ margin-left: 50px;
   background-color: var(--secondary-button-background-color);
 }
 
-.team-card {
+.team-list--card {
+  max-width: 270px;
+  max-height: 428px;
   background-color: var(--secondary-button-background-color);
 }
 
-.team-card:first-child {
+.team-list--card:first-child {
   margin-left: 0;
 }
 
-.team-card:last-child {
+.team-list--card:last-child {
   margin-right: 0;
 }
 
-.section-subtitle.name {
+.team-list--subtitle {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-transform: capitalize;
+  text-align: center;
+  color: var(--section-title-color);
+}
+
+
+.team-list--label{
+  font-size: 16px;
+  list-style: 1.19;
+  padding-bottom: 16px;
   text-align: center;
 }
 
@@ -504,7 +531,7 @@ margin-left: 50px;
   background-color: var(--accent-color);
 }
 
-.card {
+.team-list--container {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -516,36 +543,11 @@ margin-left: 50px;
   text-align: center;
 }
 
-.card>h3 {
+.team-list--container>h3 {
   display: block;
   text-align: center;
 }
 
-.team-card {
-  max-width: 270px;
-  max-height: 428px;
-}
-
-.our-team {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  background-color: var(--secondary-button-background-color);
-}
-
-.container.team {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--secondary-button-background-color);
-}
-
-.job-title {
-  font-size: 16px;
-  list-style: 1.19;
-  padding-bottom: 16px;
-  text-align: center;
-}
 
 /* client section */
 

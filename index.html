@@ -394,7 +394,7 @@
 
   <!--footer-->
   <footer class="footer">
-    <div class="container footer">
+    <div class="container footer container--footer">
       <div>
       <a class="logo--footer" lang="en" href="index.html">
           <span class="logo--label">Web</span>Studio</a>
@@ -468,7 +468,7 @@
   <!-- бекдроп і модальне вікно -->
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
-      <button class="modal--button__close" data-modal-close>
+      <button class="modal--close button--icon" data-modal-close>
         <svg width="11px" height="11px" class="modal--icon__close">
           <use href="./images/icons.svg.svg#icon-close"></use>
         </svg>
@@ -477,7 +477,7 @@
       <!--Форма-->
       <form class="form">
         <!--ім'я-->
-        <div class="form-field--container">
+        <div class=" form-field--item form-field--container">
           <label class="form-field"> <span class="form-field--label">Ім'я</span>
             <input type="text" name="name" autofocus placeholder=" " class="form-field--input" />
             <svg class="form-field--icon" width="18px" height="18px">
@@ -487,7 +487,7 @@
         </div>
 
         <!--Телефон-->
-        <div class="form-field--container">
+        <div class="form-field--item form-field--container">
           <label class="form-field"><span class="form-field--label">Телефон</span>
             <input type="tel" name="tel" class="form-field--input" placeholder=" " />
             <svg class="form-field--icon" width="18px" height="18px">
@@ -497,7 +497,7 @@
         </div>
 
         <!--Пошта-->
-        <div class="form-field--container">
+        <div class="form-field--item form-field--container">
           <label class="form-field"><span class="form-field--label">Пошта</span>
             <input type="email" name="mail" autocomplete="on" class="form-field--input" placeholder=" " />
             <svg class="form-field--icon" width="18px" height="18px">
@@ -507,7 +507,7 @@
         </div>
 
         <!--коментар-->
-        <label class="form-field comment--form-field">
+        <label class="comment--form-field">
           <span class="form-field--label">Коментар</span>
           <textarea name="comment" id="comment" rows="10" class="comment--box" placeholder="Введіть текст"></textarea>
         </label>
@@ -521,7 +521,7 @@
             Погоджуюсь з розсилкою та приймаю
             <a class="checkbox--policy-link" href="#">Умови договору</a></label>
         </div>
-        <button class="button form--button__submit" type="submit">Відправити</button>
+        <button class="button submit--button" type="submit">Відправити</button>
       </form>
     </div>
   </div>

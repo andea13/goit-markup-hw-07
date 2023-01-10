@@ -616,7 +616,7 @@ margin-left: 50px;
   background-color: var(--hero-background-color);
 }
 
-.container.footer {
+.container--footer {
   max-width: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -747,17 +747,17 @@ margin-left: 50px;
 /* головна частина */
 /* секція 1*/
 
-.section.filter--section {
+.filter--section {
   padding-top: 0;
 }
 
-.container.filter--container {
+.filter--container {
   max-width: 1200px;
   margin: 0, auto;
   padding: 0, 15px;
 }
 
-.filter--item-list.list {
+.filter--item-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -767,7 +767,6 @@ margin-left: 50px;
   margin-bottom: 50px;
   margin-left: auto;
 
-  flex-basis: calc((100% - 32px) / 5);
 }
 
 .filter--item:last-child {
@@ -892,7 +891,7 @@ a:hover .product--overlay {
   font-size: 1.71;
 }
 
-.container.footer {
+.container--footer {
   display: flex;
   align-items: baseline;
 }
@@ -966,7 +965,8 @@ a:hover .product--overlay {
   transition: transform var(--transition-time-main) var(--time-function);
 }
 
-.modal--button__close {
+
+.modal--close{
   position: absolute;
   display: flex;
   align-items: center;
@@ -975,6 +975,9 @@ a:hover .product--overlay {
   right: 8px;
   width: 30px;
   height: 30px;
+}
+
+.button--icon {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -983,14 +986,11 @@ a:hover .product--overlay {
   transition: fill var(--transition-time-main) var(--time-function);
 }
 
-.modal--button__close:hover,
-.modal--button__close:focus {
+.button--icon:hover,
+.button--icon:focus {
   fill: var(--accent-color);
 }
 
-.modal--icon__close {
-  display: flex;
-}
 
 .modal--title {
   font-size: 20px;
@@ -1005,9 +1005,12 @@ a:hover .product--overlay {
 }
 
 .form-field--container {
-  margin-bottom: 10px;
-  position: relative;
-  width: 448px;
+ position: relative;
+ width: 448px;
+}
+
+.form-field--item{
+margin-bottom: 10px;
 }
 
 .form-field {
@@ -1066,13 +1069,18 @@ a:hover .product--overlay {
   transition: border-color var(--transition-time-main) var(--time-function);
 }
 
-.form-field.comment--form-field {
+.comment--form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.16;
   width: 448px;
   height: 120px;
   margin-bottom: 20px;
 }
 
-.form-field.comment--form-field:focus-within .comment--box {
+.comment--form-field:focus-within .comment--box {
   border-color: var(--accent-color);
 }
 
@@ -1129,7 +1137,7 @@ a:hover .product--overlay {
   text-decoration: underline;
 }
 
-.form--button__submit {
+.submit--button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1154,7 +1162,7 @@ a:hover .product--overlay {
   transition: background-color var(--transition-time-main) var(--time-function);
 }
 
-.form--button__submit:hover,
-.form--button__submit:focus {
+.submit--button:hover,
+.submit--button:focus {
   background-color: var(--component-active-color);
 }

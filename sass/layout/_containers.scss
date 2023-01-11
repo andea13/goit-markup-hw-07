@@ -1,0 +1,33 @@
+.container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container--header {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding-top: 0;
+    padding-right: 15px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    border-bottom: none;
+}
+
+.logo--header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--logo-color);
+
+    .logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+        }
+}
+

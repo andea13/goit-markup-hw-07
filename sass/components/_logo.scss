@@ -1,0 +1,19 @@
+.logo--header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--logo-color);
+  @extend %logo;
+}
+
+.logo--footer {
+  display: block;
+  color: var(--primary-button-color);
+  @extend %logo;
+}
+
+.logo--label {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  color: var(--accent-color);
+  @extend %logo;
+}

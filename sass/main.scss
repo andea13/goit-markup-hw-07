@@ -1,18 +1,13 @@
-//  Utils
-@import'./base/normalize';
+@import './base/normalize';
+@import './base/reset';
 @import './utils/fonts';
 @import './utils/variables';
+@import './base/base';
 @import './utils/placeholders';
-
-// Base
-@import'./base/base';
-@import'./base/reset';
-// Components
-@import'./components/buttons';
-@import'./components/hero-section';
-@import'./components/logo';
-@import'./components/main-nav';
-@import'./components/page-header';
-
-// Layout
-@import'./layout/container';
+@import './components/buttons';
+@import './components/contacts-nav';
+@import './components/hero-section';
+@import './components/logo';
+@import './components/main-nav';
+@import './components/page-header';
+@import './layout/containers';

@@ -1296,14 +1296,14 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-}
-a:hover .product--overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
   -webkit-transition: -webkit-transform var(--transition-time-main) var(--time-function);
   transition: -webkit-transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function), -webkit-transform var(--transition-time-main) var(--time-function);
+}
+a:hover .product--overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .container, .container-hero {
